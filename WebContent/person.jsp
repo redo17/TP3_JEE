@@ -19,14 +19,14 @@
 	       <th>numero</th>
 	       <th>Nom</th>
 	       <th>Prenom</th>
-	       <th>date de naissance</th>
+<!-- 	       <th>date de naissance</th> -->
 	       <th>email</th>
 	   </tr>
 	   <tr>
 	       <td><%= person.getNumero()  %></td>
 	       <td><%= person.getNom()  %></td>
 	       <td><%= person.getPrenom()  %></td>
-	       <td><%= person.getDate()  %></td>
+<%-- 	       <td><%= person.getDate()  %></td> --%>
 	       <td><%= person.getEmail() %></td>
 	   </tr>
 	</table>

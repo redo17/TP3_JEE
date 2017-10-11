@@ -4,22 +4,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>formulaire</title>
 </head>
 <body>
-	<form action="test" method="POST">
+	<form action="edition" method="POST">
 	
+	  <label>Numéro : </label>
+	    <input type="text" name="numero" size="15"/><br/>
+	    
 	  <label>Nom : </label>
 	    <input type="text" name="nom" size="15"/><br/>
 	
 	  <label>Prénom : </label>
 	    <input type="text" name="prenom" size="15"/><br/>
 	
-	  <label>Statut : </label>
-	    <select name="statut" size="1">
-	      <option value="Etudiant">Etudiant</option>
-	      <option value="Prof">Enseignant</option>
-	    </select><br/>
+	  <label>Date de Naissance : </label>
+	    <input type="date" name="date"/><br/>
+	
+	  <label>Email : </label>
+	    <input type="text" name="email" size="15"/><br/>
 	
 	  <input type="submit" name="boutonOK" value="Valider"/>
 	
