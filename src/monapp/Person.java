@@ -3,22 +3,16 @@ package monapp;
 import java.util.Date;
 
 public class Person {
-    String numero;
+    int id = 0;
 	String nom;
 	String prenom;
-//    Date date;
+    Date date;
     String email;
     
     public Person() {
 	}
 
-	public String getNumero() {
-		return numero;
-	}
 
-	public void setNumero(String numero) {
-		this.numero = numero;
-	}
 
 	public String getNom() {
 		return nom;
@@ -36,13 +30,13 @@ public class Person {
 		this.prenom = prenom;
 	}
 
-//	public Date getDate() {
-//		return date;
-//	}
-//
-//	public void setDate(Date date) {
-//		this.date = date;
-//	}
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
 
 	public String getEmail() {
 		return email;
@@ -50,6 +44,18 @@ public class Person {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+
+
+	public int getId() {
+		return id;
+	}
+
+
+
+	public void setId(int id) {
+		this.id = id;
 	}
         
 }

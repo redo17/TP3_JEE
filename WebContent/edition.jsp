@@ -9,8 +9,8 @@
 <body>
 	<form action="edition" method="POST">
 	
-	  <label>Numéro : </label>
-	    <input type="text" name="numero" size="15"/><br/>
+<!-- 	  <label>Id : </label> -->
+<!-- 	    <input type="text" name="numero" size="15"/><br/> -->
 	    
 	  <label>Nom : </label>
 	    <input type="text" name="nom" size="15"/><br/>

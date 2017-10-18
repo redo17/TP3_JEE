@@ -8,27 +8,26 @@
 </head>
 <body>
 
-	<jsp:useBean 	id="person" 
-				scope="session" 
-				class="monapp.Person" >
+	<jsp:useBean 	id="person" scope="session" class="monapp.Person" >
     	<p>Personnes :</p>
 	</jsp:useBean>
 
 	<table>
-	   <tr>
-	       <th>numero</th>
-	       <th>Nom</th>
-	       <th>Prenom</th>
-<!-- 	       <th>date de naissance</th> -->
-	       <th>email</th>
-	   </tr>
-	   <tr>
-	       <td><%= person.getNumero()  %></td>
-	       <td><%= person.getNom()  %></td>
-	       <td><%= person.getPrenom()  %></td>
-<%-- 	       <td><%= person.getDate()  %></td> --%>
-	       <td><%= person.getEmail() %></td>
-	   </tr>
+	   	<tr>
+	       	<th>ID</th>
+	       	<th>Nom</th>
+	       	<th>Prenom</th>
+	       	<th>date de naissance</th>
+	       	<th>email</th>
+	   	</tr>
+	   	<tr>
+	       	<td><%= String.valueOf(person.getId())  %></td>
+	       	<td><%= person.getNom()  %></td>
+	       	<td><%= person.getPrenom()  %></td>
+<!-- 	       	a refaire l'affichage de la date sur la tabler .... ^_^ -->
+	       	<td><%= person.getDate()  %></td>
+	       	<td><%= person.getEmail() %></td>
+	   	</tr>
 	</table>
 
 </body>

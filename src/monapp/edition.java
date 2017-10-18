@@ -49,6 +49,7 @@ public class edition extends HttpServlet {
 
 		// ranger/recuperer un objet dans une session
 		HttpSession session = request.getSession();
+		
 		Person person;
 		Object o = session.getAttribute("person");
 		if (o instanceof Person) {
@@ -58,9 +59,10 @@ public class edition extends HttpServlet {
 			session.setAttribute("person", person);
 		}
 
-		person.setNumero(request.getParameter("numero"));
+//		person.setNumero(request.getParameter("numero"));
 		person.setNom(request.getParameter("nom"));
 		person.setPrenom(request.getParameter("prenom"));
+//		person.setDate(request.getParameter("date"));
 		person.setEmail(request.getParameter("email"));
 		
 		request.getRequestDispatcher("person.jsp").forward(request, response);
